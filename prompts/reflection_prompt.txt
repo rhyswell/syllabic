@@ -1,0 +1,46 @@
+You are reviewing a generated assignment for correctness.
+
+==============================
+WEEKLY SYLLABUS SECTION:
+{weekly_syllabus}
+
+RELEVANT COURSE MATERIALS:
+{materials_text}
+
+STUDENT PROFILE:
+{student_profile}
+
+GENERATED ASSIGNMENT JSON:
+{generated_assignment}
+==============================
+
+Evaluate the assignment based on:
+
+1. Uses ONLY provided materials
+2. No external knowledge introduced
+3. Proper personalization
+4. Appropriate difficulty calibration
+5. Alignment with syllabus objectives
+6. Coherent structure
+
+Return STRICTLY valid JSON:
+
+{
+  "is_valid": boolean,
+  "issues_found": [string],
+  "corrected_assignment": { full corrected assignment JSON }
+}
+
+If no issues exist:
+- is_valid = true
+- issues_found = []
+- corrected_assignment = original assignment unchanged
+
+If issues exist:
+- is_valid = false
+- List issues clearly
+- Provide fully corrected JSON in corrected_assignment
+
+Output only JSON.
+No explanations.
+No markdown.

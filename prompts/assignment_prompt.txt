@@ -1,0 +1,46 @@
+You are generating a personalized weekly university assignment.
+
+==============================
+WEEK NUMBER:
+{week_number}
+
+WEEKLY SYLLABUS SECTION:
+{weekly_syllabus}
+
+RELEVANT COURSE MATERIALS:
+{materials_text}
+
+STUDENT PROFILE:
+{student_profile}
+==============================
+
+Generate a structured JSON object with the following exact structure:
+
+{
+  "week": int,
+  "topic": string,
+  "learning_objectives": [string],
+  "assignment": {
+    "title": string,
+    "description": string,
+    "deliverables": [string],
+    "evaluation_criteria": [string]
+  },
+  "reading_list": [string],
+  "difficulty_level": string,
+  "personalization_rationale": string
+}
+
+Requirements:
+
+- Use ONLY content from the syllabus and provided materials.
+- Reading list must reference only provided materials.
+- Difficulty must align with student profile.
+- Assignment must reflect goals and weaknesses.
+- Evaluation criteria must be concrete and measurable.
+- Personalization rationale must explain how the assignment was adapted.
+
+Output STRICTLY valid JSON.
+No markdown.
+No explanations.
+No extra text.
